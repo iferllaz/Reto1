@@ -4,10 +4,10 @@ package javabowling;
 
 public class Empty extends JavaBowling{
    
-    int puntos;
+    int empty;
     
     public int Empty(){
-        return puntos = primerTiro + siguienteTiro;
+        return empty = puntos + primerTiro + segundoTiro;
     }
     
 }
