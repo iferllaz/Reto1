@@ -2,7 +2,7 @@
 package javabowling;
 
 
-public class Empty extends Frames{
+public class Empty extends JavaBowling{
    
     int puntos;
     

@@ -1,12 +1,12 @@
 
 package javabowling;
 
-public class Spare extends Frames {
+public class Spare extends JavaBowling {
     
     int siguienteTiro;
     
-    public Spare(){
-        siguienteTiro = 10 - primerTiro;
+    public int Spare(){
+        return siguienteTiro = 10 - primerTiro;
     }
      
     
