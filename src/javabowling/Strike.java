@@ -2,14 +2,14 @@
 package javabowling;
 
 public class Strike extends JavaBowling {
-     
-    int numTiros;
+            int puntos = 10;
 
-       
-    public int theStrike(){
-        numTiros = +2;
-        siguienteTiro=0;
-       return puntos = +10;
-        
+    public Strike() {
     }
+
+    public int getStrike() {
+        return puntos;
+    }
+            
+      
 }

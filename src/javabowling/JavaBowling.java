@@ -6,12 +6,11 @@ import java.util.Scanner;
 
 public class JavaBowling {
      int frame [] = new int [9];
-        int tiro=20;
+        int tiro;
         int primerTiro;
         int siguienteTiro;
         int puntos;
-        int puntaje;
-        int puntajeTotal;
+        int puntajeTotal = 0;
         
         
     public static void main(String[] args) {
@@ -19,12 +18,12 @@ public class JavaBowling {
            Frames obj = new Frames();
            obj.frameMove(); 
            
-           for (int i=0; i <9; i++){
+         
            
                    
            
            }
           }
-    }
+    
     
 

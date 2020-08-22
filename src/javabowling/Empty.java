@@ -6,8 +6,8 @@ public class Empty extends JavaBowling{
    
     int puntos;
     
-    public Empty(){
-        int puntos = primerTiro + siguienteTiro;
+    public int Empty(){
+        return puntos = primerTiro + siguienteTiro;
     }
     
 }
