@@ -2,13 +2,11 @@
 package javabowling;
 
 public class Strike extends JavaBowling {
-           int strike = 10; 
+           int strike; 
 
-    public Strike() {
-    }
 
     public int getStrike() {
-        return strike;
+        return strike = 10;
     }
             
       

@@ -12,79 +12,56 @@ public class Frames extends JavaBowling {
           
           
         public String frameMove(){
-
-              
-
+            
                 for(int i=0; i <= 9; i++){
                     int juego = i+1;
                         System.out.println("Puntaje de la primer bola en el juego "+juego+":");
                         tiro = leer.nextInt();
                         primerTiro = tiro;
                         
-                            if (primerTiro == 0){
-                                 System.out.println("Puntaje de la siguiente bola:");
-                                 tiro = leer.nextInt();
-                                 segundoTiro = tiro;
-                                 puntos = puntos + empt.Empty();
-                                 
-                                 puntajeTotal = puntajeTotal + puntos;
-                                 System.out.println("Puntos obtenidos: "+puntos);
-                                 System.out.println("");
-                                  }
-                            if (primerTiro < 10){
-                                 System.out.println("Puntaje de la siguiente bola:");
-                                 tiro = leer.nextInt();
-                                 segundoTiro = tiro;
-                                        if (segundoTiro == obj.Spare()) {
-                                            puntos= primerTiro + segundoTiro + puntajeTotal;
-                                            puntajeTotal = puntos + puntajeTotal;
-                                            System.out.println("Puntaje: "+puntajeTotal);
-                                            }
-                                  }                  
-                                      
                             if (primerTiro == 10){
-                                segundoTiro = 0;
-                               
-                                puntos =  puntos + str.getStrike() + segundoTiro;
-                                System.out.println("CHUZA! Puntos obtenidos: "+puntos+".");
-                                 
-                                System.out.println("Tiras una vez mas: ");
-                              /*  tiro = leer.nextInt();
-                                
-                                        if (tiro == 10){
-                                            segundoTiro = 0;
-                                            primerTiro  = tiro;
-                                            puntos =  str.getStrike() + segundoTiro;
-                                            System.out.println("CHUZA! Puntos obtenidos: "+puntos+".");
-                                                    if (tiro == 10){
-                                                            System.out.println("Puntaje de la siguiente bola:");
-                                                            tiro = leer.nextInt();
-                                                                if (tiro == 10){
-                                                                    segundoTiro = 0;
-                                                                    primerTiro  = tiro;
-                                                                    puntos =  str.getStrike() + segundoTiro;
-                                                                    System.out.println("CHUZA! Puntos obtenidos: "+puntos+".");
-                                                */   
-                                i--;
-                                puntajeTotal = puntos + primerTiro + segundoTiro + puntajeTotal;
-                                }
-                                        
-                            }
-                                    
-                            puntajeTotal = puntos + primerTiro + segundoTiro + puntajeTotal;
-                            System.out.println("Puntaje general hasta ahora: "+puntajeTotal);
+                                    segundoTiro = 0;
 
+                                    puntos =  str.getStrike();
+                                    
+                                    System.out.println("Strike!!");
+                                    System.out.println("Puntaje: "+puntaje);
+
+                                    System.out.println("Tiras una vez mas: ");
+
+                                    i--;
+                                    puntajeTotal = puntaje + primerTiro + segundoTiro + puntajeTotal;
+                                }
+                        System.out.println("Puntaje de la siguiente bola:");
+                        tiro = leer.nextInt();
+                        segundoTiro = tiro;
+                         
+                            if (segundoTiro == obj.Spare()) {
+                                    puntos = primerTiro + segundoTiro;
+                                    puntaje = puntos + puntaje;
+                                    System.out.println("Spare!!");
+                                    System.out.println("Puntaje: "+puntaje);
+                                    puntajeTotal = puntajeTotal + puntaje;
+                                    }
+                                
+                            if (primerTiro == 0){
+                                    puntos = empt.Empty();
+                                    puntaje = puntaje + puntos; 
+               
+                                    System.out.println("Puntaje: "+puntaje);
+                                    System.out.println("");
+                                  }   
+                        puntaje = puntaje + puntos;            
+                        puntajeTotal = puntaje + primerTiro + segundoTiro + puntajeTotal;
+                        System.out.println("primer tiro: "+primerTiro );
+                        System.out.println("segundo tiro: "+ segundoTiro);
+                        System.out.println("-----puntaje:" + puntaje);
+                        System.out.println("Puntaje general hasta ahora: "+puntajeTotal);
+                        System.out.println("----------------------");
+                        System.out.println("");
+                }
+            return "Puntaje TOTAL: " + puntajeTotal;
+        }   
 
                     
-
-                    return "Puntaje TOTAL: " + puntajeTotal;
-            }
-
-
 }
-
-
-
-
-
-
